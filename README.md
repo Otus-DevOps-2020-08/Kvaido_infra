@@ -4,7 +4,7 @@ Kvaido Infra repository
 -------------------------
 ## Homework#4
 ```
-testapp_IP = 84.201.158.160
+testapp_IP = 130.193.49.229
 testapp_port = 9292
 ```
 
