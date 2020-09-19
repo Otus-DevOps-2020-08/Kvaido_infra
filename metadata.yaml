@@ -7,9 +7,8 @@ apt:
   preserve_sources_list: true
 
 users:
-  - default
-  - name: ubuntu
-    sudo: ALL=(ALL) NOPASSWD:ALL
+  - name: appuser
+    groups: sudo
     shell: /bin/bash
     ssh-authorized-keys:
     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7Sa/1glWv+BqrNPP0WLc1h9DVs4pDSjJotna7aT5R6Ppw8AJLQoUa21VM1xSmgcyCNNBFoIKIkk4VIVy2iE1IWTvXO4TiLdDg+TFOLAegYX6k47AcAfMYI6Kv1Sw9SJo2k+Oppy2P2Pe+chZfDkYgQBVS4DU968jC6DOCVmwCfbFKC9BUPCq2X00iT0NFAMhlW9BUPB7fUWZ/nKQsQd6nW2/4HwFncR9gNcuVRRTv4OAD3JwISgP1O76mJaxJLCkVqAgzO1ZL4YjyaF02RdElEamfKUWDy7TeG4+t9yij43DIFYxZDSpvLLPuQ8uXhnrySmsJj17ElP6FyhfaygY4d1W44KxZXDiZFZUQ4KbpoddaMzbn/tDGeLdqeyz/3z9hScYLd1nswZUCB7hHY1jAfZewFQHhKhyLhHMhkymcCM4YsidfEZZgqzOKWaiVSWuyWQ/ogH9nxLraKa26JZwHfO4qi54RhAIteTDvp/ybTxMhKcrK4xK3eNewxsc9S+M= appuser
@@ -30,7 +29,7 @@ runcmd:
   - apt-get install -y mongodb-org
   - systemctl start mongod
   - systemctl enable mongod
-  - cd /home/yc-user
+  - cd /home/appuser
   - git clone -b monolith https://github.com/express42/reddit.git
   - cd reddit && bundle install
   - puma -d
