@@ -1,0 +1,5 @@
+{
+    "cloud_folder_id": "something",
+    "service_account_key_file_path": "somekey",
+    "source_image_family_name": "ubuntu-number-lts",
+}
