@@ -2,6 +2,30 @@
 Kvaido Infra repository
 
 -------------------------
+## Homework#5
+1. Был создан сервисный аккаунт для Packer в Yandex.Cloud и делегированы права
+
+2. Был создан service account key file
+
+3. Был создан шаблон Packer ubuntu16.json
+
+4. Была проведена проверка и создан образ
+```
+packer validate ./ubuntu16.json
+packer build ./ubuntu16.json
+```
+
+5. Для дополнительного задания был создан bake-образ immutable.json
+```
+packer build -var-file=variables.json immutable.json
+```
+
+6. Для дополнительного задания был создан скрипт create-reddit-vm.sh создающий ВМ на базе bake-образ
+```
+http://178.154.226.239:9292
+```
+
+-------------------------
 ## Homework#4
 ```
 testapp_IP = 130.193.49.229
