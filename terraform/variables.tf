@@ -21,5 +21,5 @@ variable subnet_id {
   description = "e9bgianfsqln13nf5ou7"
 }
 variable service_account_key_file {
-  description = "key.json"
+  description = "/home/nasimi/Documents/keys/terraform/key.json"
 }
