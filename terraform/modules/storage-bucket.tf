@@ -3,9 +3,9 @@ terraform {
     endpoint   = "storage.yandexcloud.net"
     bucket     = "<имя бакета>"
     region     = "us-east-1"
-    key        = "<путь к файлу состояния в бакете>/<имя файла состояния>.tfstate"
-    access_key = "<идентификатор статического ключа>"
-    secret_key = "<секретный ключ>"
+    key        = "<terraform.tfstate"
+    access_key = "<key>"
+    secret_key = "<secretkey>"
 
     skip_region_validation      = true
     skip_credentials_validation = true
