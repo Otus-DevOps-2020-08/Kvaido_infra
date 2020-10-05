@@ -2,6 +2,39 @@
 Kvaido Infra repository
 
 -------------------------
+## Homework#8
+
+1. Был написан ansible-playbook clone.yml и inventory файл.
+
+2. На виртуальную машину app была применена комманда, которая скачала репозиторий с github.
+```
+ansible app -m git -a 'repo=https://github.com/express42/reddit.git dest=/home/ubuntu/reddit'
+```
+
+3. Для проверки работы ansible удалим репозиторий.
+```
+ansible app -m command -a 'rm -rf ~/reddit'
+```
+
+и применим ansible-playbook clone.yml
+```
+user@computer:~/Documents/otus/Kvaido_infra/ansible$ ansible-playbook clone.yml
+
+PLAY [Clone] **********************************************************************************************************
+
+TASK [Gathering Facts] ************************************************************************************************
+ok: [appserver]
+
+TASK [Clone repo] *****************************************************************************************************
+changed: [appserver]
+
+PLAY RECAP ************************************************************************************************************
+appserver                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+В итоге измения были применены только по одному пункту, так как 'Gathering Facts' не были затронуты предыдущей командой.
+
+
+-------------------------
 ## Homework#7
 
 1. БД был вынесен на отдельный инстанс VM.
