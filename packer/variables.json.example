@@ -1,5 +1,6 @@
+
 {
-    "folder_id": "b1g73nl4hri4jp",
     "service_account_key_file": "key.json",
-    "source_image_family": "ubuntu-number-lts"
+    "folder_id": "somenumber",
+    "source_image_family": "ubuntu"
 }
