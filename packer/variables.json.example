@@ -1,5 +1,5 @@
 {
-    "cloud_folder_id": "b1g73nl4hri4jp",
+    "folder_id": "b1g73nl4hri4jp",
     "service_account_key_file_path": "key.json",
-    "source_image_family_name": "ubuntu-number-lts"
+    "source_image_family": "ubuntu-number-lts"
 }
