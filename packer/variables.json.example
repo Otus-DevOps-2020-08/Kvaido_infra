@@ -1,6 +1,6 @@
 
 {
-    "service_account_key_file_path": "./key.json",
     "cloud_folder_id": "somenumber",
+    "service_account_key_file_path": "packer/key.json",
     "source_image_family_name": "something"
 }
