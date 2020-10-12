@@ -6,3 +6,4 @@
 .terraform/
 /terraform/key.json
 versions.tf
+*.retry

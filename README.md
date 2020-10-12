@@ -2,6 +2,22 @@
 Kvaido Infra repository
 
 -------------------------
+## Homework#9
+
+1. Был написан reddit_app.yml и опробованы tags
+
+2. Был написан reddit_app2.yml и оптимизирован для более удобного выполнения.
+
+3. Были добаавлены шаблоны (templates).
+
+4. reddit_app.yml и reddit_app2.yml были переименованы в reddit_app_one_play.yml и reddit_app_multiple_plays.yml.
+
+5. Был написан плейбук site.yml с несколькими сценариями app.yml, db.yml, deploy.yml.
+
+6. Были написаны плейбуки packer_app.yml и packer_db.yml для замены bash скриптов в Packer
+
+
+-------------------------
 ## Homework#8
 
 1. Был написан ansible-playbook clone.yml и inventory файл.
