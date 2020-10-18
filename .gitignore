@@ -7,3 +7,4 @@
 /terraform/key.json
 versions.tf
 *.retry
+jdauphant.nginx
