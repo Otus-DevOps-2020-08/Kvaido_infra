@@ -1,10 +1,11 @@
 - name: Deploy App
   hosts: app
-  become: true
-  vars:
-    deploy_user: ubuntu
-
   tasks:
+    - name: install apps
+      become: true
+      apt:
+        name:
+          - git
     - name: Fetch the latest version of application code
       git:
         repo: 'https://github.com/express42/reddit.git'
